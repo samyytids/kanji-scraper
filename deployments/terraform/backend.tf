@@ -1,5 +1,5 @@
 terraform {
   backend "local" {
-    path = "/opt/terraform-state/kanji-scraper/terraform.tfstate"
+    path = "~/tf-state/kanji-scraper/terraform.tfstate"
   }
 }
