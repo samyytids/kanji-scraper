@@ -1,7 +1,7 @@
 name: Run terraform set up
 run-name: ${{ github.actor }} is running terraform set up
 on:
-  pull_request:
+  push:
     branches:
       - main
     paths:
