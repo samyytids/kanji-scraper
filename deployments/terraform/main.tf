@@ -54,3 +54,4 @@ resource "mongodb_user" "read_only" {
     database = mongodb_database.kanji.name
   }
 }
+
