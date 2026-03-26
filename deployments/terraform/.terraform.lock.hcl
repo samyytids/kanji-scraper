@@ -1,6 +1,29 @@
 # This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 
+provider "registry.terraform.io/felgel/mongodb" {
+  version     = "2.0.4"
+  constraints = "2.0.4"
+  hashes = [
+    "h1:7/zxLn56LbSgdaNJTle2KRH1YBltVZA3Cp5Prc9pnss=",
+    "zh:0d3438ab15f1f4cb2fd49f077fa7126565402762e3e27ff7e244291c43ce708d",
+    "zh:1151c2090ab74a54e01d427116217812f8560b06bfac5308da72b01eeeb8f318",
+    "zh:11e4d14bf308709aba66ace145b208aaf347f3885cf51da25f41265dbb215b1e",
+    "zh:13c726b0997edb68a03665b33f976c32ffa134fa22507082db5ff0343d76a23b",
+    "zh:16d359b652fd3ae9bb1840a98278ad5e11518da1483f20727048ba128ce5428c",
+    "zh:1b9e2774baa10bfeeb3feaac6f4f1e3575cc70d15cbaaa2b2710afe9a930242a",
+    "zh:4976e7d412a573e05d49b1c6a5cacbe4e6d52ad7a233197e200b935acc7c9f5d",
+    "zh:65fcfcc4d29973d1d280472237dbb1c2f29ebf885d09f0b16b40a3eca9877f31",
+    "zh:726ce496de6dc1ee48c3351dca136837a12db1de2d60421a15df61bb431c0c6e",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:9b1f18a49dca93a16025e531682995ab13f775b5a0cfc4bacf2110c0330c2858",
+    "zh:ab851fd068d487cc38006b92cc89b259d004b60663560f762ddcb827188480e1",
+    "zh:d9e8c4ad119d1a14dec4748e773c25f287ee341c81979ce84ae4fecf16fdcd58",
+    "zh:db3fba8c271c461fe00323e3dd118122ff3281448ea180d4712bd1c908c3abd3",
+    "zh:e535298794b7916cc8131e62ee45be06c245354ed73b8c75c8c4c098fec7f021",
+  ]
+}
+
 provider "registry.terraform.io/therealkaban9/mongodb" {
   version     = "1.0.0"
   constraints = "~> 1.0"
