@@ -4,6 +4,12 @@ variable "scraper_password" {
   nullable    = false
 }
 
+variable "reader_password" {
+  type        = string
+  description = "The password for the reader microservice's user"
+  nullable    = false
+}
+
 variable "admin_password" {
   type        = string
   description = "The password for the admin user"
