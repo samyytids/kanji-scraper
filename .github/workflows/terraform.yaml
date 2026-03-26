@@ -31,4 +31,3 @@ jobs:
           TF_VAR_scraper_password: ${{ secrets.SCRAPER_PASSWORD }}
           TF_VAR_reader_password: ${{ secrets.READER_PASSWORD }}
         run: terraform apply -auto-approve
-
