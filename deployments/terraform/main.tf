@@ -90,3 +90,4 @@ resource "mongodb_db_collection" "collection" {
   db       = mongodb_database.kanji.name
   name     = each.value
 }
+
