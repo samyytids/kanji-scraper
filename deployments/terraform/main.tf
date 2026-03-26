@@ -10,7 +10,7 @@ terraform {
 provider "mongodb" {
   host          = "localhost"
   port          = 27017
-  username      = var.admin_username
+  username      = var.admin_user
   password      = var.admin_password
   auth_database = "admin"
 }
