@@ -1,0 +1,30 @@
+name: Run terraform set up
+run-name: ${{ github.actor }} is running terraform set up
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**.tf"
+
+jobs:
+  Run-Terraform:
+    runs-on:
+      self-hosted
+    steps:
+      - uses: actions/checkout@v6
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+      - name: Terraform init
+        run: terraform init
+      - name: Terraform Format Check
+        run: terraform fmt
+      - name: Terraform Validate
+        run: terraform validate
+      - name: Terraform Apply
+        env:
+          TF_VAR_admin_user: ${{ secrets.ADMIN_USER }}
+          TF_VAR_admin_password: ${{ secrets.ADMIN_PASSWORD }}
+          TF_VAR_scraper_password: ${{ secrets.SCRAPER_PASSWORD }}
+          TF_VAR_reader_password: ${{ secrets.READER_PASSWORD }}
+        run: terraform apply -auto-approve
